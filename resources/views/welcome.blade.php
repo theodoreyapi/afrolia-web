@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/style-web.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -16,6 +17,7 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-6 col-md-8">
+                    <span class="badge rounded-pill bg-secondary mb-3 px-3 py-2">✨ N°1 de la coiffure Afro</span>
                     <p class="brand-text mb-2"><span class="star-icon me-2">✨</span>Afrolia</p>
 
                     <h1 class="display-3 fw-bold mb-3">
@@ -388,67 +390,7 @@
     </section>
 
 
-    <footer class="main-footer py-5">
-        <div class="container">
-            <div class="row gy-4">
-
-                <div class="col-lg-4 col-md-12">
-                    <p class="footer-brand"><span class="star-icon">✨</span>Afrolia</p>
-                    <p class="footer-tagline">La coiffure Afro à portée de main</p>
-                    <div class="social-icons d-flex mt-3">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-2">
-                    <h5 class="footer-heading">Pour les clientes</h5>
-                    <ul class="footer-list list-unstyled mt-3">
-                        <li><a href="#">Trouver une coiffeuse</a></li>
-                        <li><a href="#">Comment ça marche</a></li>
-                        <li><a href="#">Tarifs</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <h5 class="footer-heading">Pour les coiffeuses</h5>
-                    <ul class="footer-list list-unstyled mt-3">
-                        <li><a href="#">Devenir partenaire</a></li>
-                        <li><a href="#">Avantages</a></li>
-                        <li><a href="#">Tarification</a></li>
-                        <li><a href="#">Support pro</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-4 col-lg-3">
-                    <h5 class="footer-heading">Entreprise</h5>
-                    <ul class="footer-list list-unstyled mt-3">
-                        <li><a href="#">À propos</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Carrières</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <hr class="footer-divider my-4">
-
-            <div class="row align-items-center">
-                <div class="col-md-6 text-md-start text-center mb-2 mb-md-0">
-                    <p class="copyright-text">© 2025 Afrolia. Tous droits réservés.</p>
-                </div>
-                <div class="col-md-6 text-md-end text-center">
-                    <p class="legal-links mb-0">
-                        <a href="#">Mentions légales</a> •
-                        <a href="#">Confidentialité</a> •
-                        <a href="#">CGU</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    @include('footer')
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
